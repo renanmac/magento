@@ -1,0 +1,164 @@
+{
+  "name": {
+    "pt_BR": "Usuário criado",
+    "en": "User created"
+  },
+  "description": {
+    "pt_BR": "Quando um usuário for criado",
+    "en": "When create an user"
+  },
+  "trigger_fields": {
+    "type": "local",
+    "fields": [
+      {
+        "key": "user_id",
+        "name": {
+          "pt_BR": "ID de usuário",
+          "en": "User ID"
+        },
+        "description": {
+          "pt_BR": "ID de usuário",
+          "en": "User ID"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "name",
+        "name": {
+          "pt_BR": "Nome",
+          "en": "Name"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "email",
+        "name": {
+          "pt_BR": "E-mail",
+          "en": "Email"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "phone",
+        "name": {
+          "pt_BR": "Telefone",
+          "en": "Phone"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "created_at",
+        "name": {"pt_BR": "Criado em", "en": "Created at"},
+        "description": {
+        },
+        "field_type": "datetime"
+      },
+      {
+        "key": "updated_at",
+        "name": {"pt_BR": "Atualizado em", "en": "Updated at"},
+        "description": {
+        },
+        "field_type": "datetime"
+      },
+      {
+        "key": "tags",
+        "name": {
+          "pt_BR": "Tags do usuário",
+          "en": "User tags"
+        },
+        "description": {
+          "pt_BR": "Tags do usuário",
+          "en": "User tags"
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "avatar.image_url",
+        "name": {
+          "pt_BR": "Foto (url)",
+          "en": "Photo (url)"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "location_data.city_name",
+        "name": {
+          "pt_BR": "Localização: Cidade",
+          "en": "Location: City"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "location_data.region_name",
+        "name": {
+          "pt_BR": "Localização: Estado",
+          "en": "Location: State"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "location_data.country_name",
+        "name": {
+          "pt_BR": "Localização: País",
+          "en": "Location: Country"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "company.name",
+        "name": { "pt_BR": "Nome", "en": "Name" },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "company.company_id",
+        "name": { "pt_BR": "Identificação", "en": "ID" },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "company.plan",
+        "name": { "pt_BR": "Plano", "en": "Plan" },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "company.size",
+        "name": { "pt_BR": "Tamanho", "en": "Size" },
+        "description": {
+        },
+        "field_type": "integer"
+      },
+      {
+        "key": "company.website",
+        "name": { "pt_BR": "Site", "en": "Website" },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "company.industry",
+        "name": { "pt_BR": "Área", "en": "Industry" },
+        "description": {
+        },
+        "field_type": "string"
+      }
+    ]
+}
