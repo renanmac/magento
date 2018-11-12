@@ -9,7 +9,7 @@ describe('Trigger: created_orders', function () {
     const event = {
       meta: {
         baseURI: process.env.BASE_URI,
-        lastReqAt: new Date() //- (15 * 60 * 1000) // 15 minutes ago
+        lastReqAt: new Date() - (15 * 60 * 1000) // 15 minutes ago
       },
       auth: {
         oauth_token: process.env.OAUTH_TOKEN
@@ -17,14 +17,9 @@ describe('Trigger: created_orders', function () {
     };
 
     trigger.handle(plg, event).then(result => {
-      console.log(result);
-      console.log(Date.parse(result[0].created_at));
-      console.log(event.meta.lastReqAt);
-      console.log(Date.parse(result[0].created_at) - event.meta.lastReqAt);
-      console.log(Date.parse(result[0].created_at) > event.meta.lastReqAt);
       expect(result).to.be.an('array');
       expect(result[0].status).to.eq('pending');
-      expect(result[0]).to.include.keys('entity_id', 'status', 'created_at');
+      expect(result[0]).to.include.keys('entity_id', 'status', 'created_at', 'customer', 'address');
       done();
     }).catch(done);
   });  

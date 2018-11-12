@@ -19,7 +19,7 @@ describe('Trigger: cancelled_orders', function () {
     trigger.handle(plg, event).then(result => {
       expect(result).to.be.an('array');
       expect(result[0].status).to.eq('canceled');
-      expect(result[0]).to.include.keys('entity_id', 'status', 'created_at');
+      expect(result[0]).to.include.keys('entity_id', 'status', 'created_at', 'customer', 'address');
       done();
     }).catch(done);
   });  
