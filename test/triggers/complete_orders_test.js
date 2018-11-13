@@ -17,7 +17,6 @@ describe('Trigger: complete_orders', function () {
     };
 
     trigger.handle(plg, event).then(result => {
-      console.log(result)
       expect(result).to.be.an('array');
       expect(result[0].status).to.eq('complete');
       expect(result[0]).to.include.keys('entity_id', 'status', 'created_at', 'customer', 'address');
