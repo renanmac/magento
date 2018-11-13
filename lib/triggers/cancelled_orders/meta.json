@@ -1,11 +1,11 @@
 {
   "name": {
-    "pt_BR": "Pedido concluído",
-    "en": "Order complete"
+    "pt_BR": "Pedido cancelado",
+    "en": "Order canceled"
   },
   "description": {
-    "pt_BR": "Quando um pedido for concluído",
-    "en": "When complete an order"
+    "pt_BR": "Quando um pedido for cancelado",
+    "en": "When an order is canceled"
   },
   "trigger_fields": {
     "type": "local",

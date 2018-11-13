@@ -1,11 +1,11 @@
 {
   "name": {
-    "pt_BR": "Pedido concluído",
-    "en": "Order complete"
+    "pt_BR": "Pedido processando",
+    "en": "Order processing"
   },
   "description": {
-    "pt_BR": "Quando um pedido for concluído",
-    "en": "When complete an order"
+    "pt_BR": "Quando um pedido estiver processando",
+    "en": "When an order is processing"
   },
   "trigger_fields": {
     "type": "local",

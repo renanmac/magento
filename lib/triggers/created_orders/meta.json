@@ -1,11 +1,11 @@
 {
   "name": {
-    "pt_BR": "Pedido concluído",
-    "en": "Order complete"
+    "pt_BR": "Pedido criado",
+    "en": "Order created"
   },
   "description": {
     "pt_BR": "Quando um pedido for concluído",
-    "en": "When complete an order"
+    "en": "When an order is created"
   },
   "trigger_fields": {
     "type": "local",
