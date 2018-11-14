@@ -1,4 +1,22 @@
 {
-  "app_id": "myapp",
-  "name": "MyApp"
+  "app_id": "magento",
+  "name": "Magento",
+  "color": "",
+  "api_base_uri": {
+    "production": {
+			"uri": "{site}/api/rest",
+			"label": "Produção",
+			"default": true
+		}
+  },
+  "authentication": {
+    "type": "oauth_2",
+    "oauth_access_fields": {
+      "oauth_nonce": "TXpQ6k4ZdUy",
+      "oauth_version": "1.0",
+      "oauth_signature_method": "PLAINTEXT",
+      "oauth_signature": "fca93d401363dc361f6377a886ece9ec%26fdbac4f2b9a030a88592851b6bbc9cf0",
+      "access_token_placement": "OAuth"
+    }
+  }
 }
