@@ -1,4 +1,4 @@
-const plg = require('pluga-plg');
+const plg = require('soap');
 const expect = require('chai').expect;
 
 const trigger = require('../../lib/triggers/complete_orders');

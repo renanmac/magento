@@ -1,4 +1,4 @@
-const plg = require('pluga-plg');
+const plg = require('soap');
 const expect = require('chai').expect;
 
 const trigger = require('../../lib/triggers/cancelled_orders');
@@ -12,7 +12,8 @@ describe('Trigger: cancelled_orders', function () {
         lastReqAt: new Date() - (15 * 60 * 1000) // 15 minutes ago
       },
       auth: {
-        oauth_token: process.env.OAUTH_TOKEN
+        api_user: process.env.API_USER,
+        api_key: process.env.API_KEY
       },
     };
 
