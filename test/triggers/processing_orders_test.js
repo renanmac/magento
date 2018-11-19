@@ -12,14 +12,15 @@ describe('Trigger: processing_orders', function () {
         lastReqAt: new Date() - (15 * 60 * 1000) // 15 minutes ago
       },
       auth: {
-        oauth_token: process.env.OAUTH_TOKEN
+        api_user: process.env.API_USER,
+        api_key: process.env.API_KEY
       },
     };
 
     trigger.handle(plg, event).then(result => {
       expect(result).to.be.an('array');
       expect(result[0].status).to.eq('processing');
-      expect(result[0]).to.include.keys('entity_id', 'status', 'created_at', 'customer', 'address');
+      expect(result[0]).to.include.keys('order_id', 'status', 'created_at', 'updated_at');
       done();
     }).catch(done);
   });  
