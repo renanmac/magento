@@ -1,5 +1,5 @@
-# myapp
-MyApp app on Pluga
+# magento
+Magento app on Pluga
 
 ### Install Node.js with [nvm](https://github.com/creationix/nvm)
 ```sh
