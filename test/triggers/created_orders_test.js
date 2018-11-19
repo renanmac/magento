@@ -18,10 +18,9 @@ describe('Trigger: created_orders', function () {
     };
 
     trigger.handle(plg, event).then(result => {
-      console.log(result.item[0].item[0]);
-      /* expect(result).to.be.an('array');
+      expect(result).to.be.an('array');
       expect(result[0].status).to.eq('pending');
-      expect(result[0]).to.include.keys('entity_id', 'status', 'created_at', 'customer', 'address'); */
+      expect(result[0]).to.include.keys('order_id', 'status', 'created_at', 'updated_at');
       done();
     }).catch(done);
   });  

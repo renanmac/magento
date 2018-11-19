@@ -2,21 +2,35 @@
   "app_id": "magento",
   "name": "Magento",
   "color": "",
+  "description": {
+    "pt_BR": "Magento é uma plataforma CMS de gestão de loja virtual líder em seu segmento.",
+    "en": ""
+  },
   "api_base_uri": {
     "production": {
-			"uri": "{site}/api/rest",
+			"uri": "{site}api/v2_soap/?wsdl",
 			"label": "Produção",
 			"default": true
 		}
   },
   "authentication": {
-    "type": "oauth_2",
-    "oauth_access_fields": {
-      "oauth_nonce": "TXpQ6k4ZdUy",
-      "oauth_version": "1.0",
-      "oauth_signature_method": "PLAINTEXT",
-      "oauth_signature": "fca93d401363dc361f6377a886ece9ec%26fdbac4f2b9a030a88592851b6bbc9cf0",
-      "access_token_placement": "OAuth"
-    }
+    "type": "pass_through_query_string",
+    "fields": [
+      {
+        "name": "site",
+        "label": "Site Completo (https://seusite...)",
+        "type": "text"
+      },
+      {
+        "name": "api_user",
+        "label": "API Username",
+        "type": "text"
+      },
+      {
+        "name": "api_key",
+        "label": "API Key",
+        "type": "text"
+      }
+    ]
   }
 }
