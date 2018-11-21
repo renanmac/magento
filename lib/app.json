@@ -8,7 +8,7 @@
   },
   "api_base_uri": {
     "production": {
-			"uri": "{site}api/v2_soap/?wsdl",
+			"uri": "{site}/api/v2_soap/?wsdl",
 			"label": "Produção",
 			"default": true
 		}
