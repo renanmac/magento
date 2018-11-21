@@ -199,8 +199,8 @@
       {
         "key": "shipping_address.firstname",
         "name": {
-          "pt_BR": "Estado",
-          "en": "Region"
+          "pt_BR": "Nome",
+          "en": "First name"
         },
         "description": {
         },
@@ -209,8 +209,8 @@
       {
         "key": "shipping_address.lastname",
         "name": {
-          "pt_BR": "Estado",
-          "en": "Region"
+          "pt_BR": "Sobrenome",
+          "en": "Last name"
         },
         "description": {
         },
@@ -279,8 +279,8 @@
       {
         "key": "billing_address.firstname",
         "name": {
-          "pt_BR": "Estado",
-          "en": "Region"
+          "pt_BR": "Nome",
+          "en": "First name"
         },
         "description": {
         },
@@ -289,8 +289,8 @@
       {
         "key": "billing_address.lastname",
         "name": {
-          "pt_BR": "Estado",
-          "en": "Region"
+          "pt_BR": "Sobrenome",
+          "en": "Last name"
         },
         "description": {
         },
