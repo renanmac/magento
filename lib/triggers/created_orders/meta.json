@@ -357,5 +357,8 @@
         "field_type": "array"
       }
     ]
-  }
+  },
+  "idempotent": [
+    { "type": "body", "field": "order_id" }
+  ]
 }
