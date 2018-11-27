@@ -12,6 +12,7 @@ describe('Trigger: complete_orders', function () {
         lastReqAt: new Date() - (15 * 60 * 1000) // 15 minutes ago
       },
       auth: {
+        site: process.env.SITE,
         api_user: process.env.API_USER,
         api_key: process.env.API_KEY
       },
@@ -23,5 +24,5 @@ describe('Trigger: complete_orders', function () {
       expect(result[0]).to.include.keys('order_id', 'status', 'created_at', 'updated_at');
       done();
     }).catch(done);
-  });  
+  });
 });
