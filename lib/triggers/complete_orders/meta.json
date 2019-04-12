@@ -267,6 +267,16 @@
         "field_type": "string"
       },
       {
+        "key": "shipping_address.fax",
+        "name": {
+          "pt_BR": "Fax",
+          "en": "Fax"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
         "key": "shipping_address.country_id",
         "name": {
           "pt_BR": "País ID",
