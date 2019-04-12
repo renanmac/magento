@@ -269,8 +269,8 @@
       {
         "key": "shipping_address.fax",
         "name": {
-          "pt_BR": "Fax",
-          "en": "Fax"
+          "pt_BR": "Endereço de Entrega: Fax",
+          "en": "Shipping Address: Fax"
         },
         "description": {
         },
@@ -351,6 +351,16 @@
         "name": {
           "pt_BR": "Telefone",
           "en": "Phone"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "billing_address.fax",
+        "name": {
+          "pt_BR": "Endereço de Cobrança: Fax",
+          "en": "Billing Address: Fax"
         },
         "description": {
         },
