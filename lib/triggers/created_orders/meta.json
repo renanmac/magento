@@ -14,7 +14,7 @@
         "key": "order_id",
         "name": {
           "pt_BR": "ID do pedido",
-          "en": "ORder ID"
+          "en": "Order ID"
         },
         "description": {
           "pt_BR": "ID do pedido",
@@ -257,6 +257,16 @@
         "field_type": "string"
       },
       {
+        "key": "shipping_address.fax",
+        "name": {
+          "pt_BR": "Endereço de Entrega: Fax",
+          "en": "Shipping Address: Fax"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
         "key": "shipping_address.country_id",
         "name": {
           "pt_BR": "País ID",
@@ -331,6 +341,16 @@
         "name": {
           "pt_BR": "Telefone",
           "en": "Phone"
+        },
+        "description": {
+        },
+        "field_type": "string"
+      },
+      {
+        "key": "billing_address.fax",
+        "name": {
+          "pt_BR": "Endereço de Cobrança: Fax",
+          "en": "Billing Address: Fax"
         },
         "description": {
         },
